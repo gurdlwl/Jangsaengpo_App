@@ -1,5 +1,7 @@
 package kr.hs.dgsw.jangsengpoapp;
 
-public interface ListClickListener {
+import android.view.View;
 
+public interface ListClickListener {
+    public void onItemClick(View v, int position);
 }

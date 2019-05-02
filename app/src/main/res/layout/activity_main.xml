@@ -52,12 +52,9 @@
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/MenuList"
-        android:layout_width="300dp"
-        android:layout_height="355dp"
-        android:layout_marginStart="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
         android:layout_marginTop="100dp"
-        android:layout_marginEnd="8dp"
-        android:background="@color/cardview_dark_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"

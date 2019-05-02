@@ -4,9 +4,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
+import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements ListClickListener {
 
     RecyclerView menuList;
     LinearLayoutManager layoutManager;
@@ -24,10 +27,15 @@ public class MainActivity extends AppCompatActivity {
 
         menuList = findViewById(R.id.MenuList);
         layoutManager = new LinearLayoutManager(this);
-        adapter = new ListAdapter();
+        adapter = new ListAdapter(this);
 
         layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
         menuList.setLayoutManager(layoutManager);
         menuList.setAdapter(adapter);
+    }
+
+    @Override
+    public void onItemClick(View v, int position){
+        Toast.makeText(this, "Click!", Toast.LENGTH_LONG).show();
     }
 }
