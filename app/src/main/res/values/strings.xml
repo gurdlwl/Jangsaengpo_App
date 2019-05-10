@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">장생포</string>
     <string name="info">내 손안에서 볼 수 있는 장생포</string>
+
+    <string name="storytelling">스토리텔링 투어</string>
+    <string name="video">영상으로 보기</string>
+    <string name="stamp">스탬프 투어</string>
+    <string name="map">장생포 한 눈에 보기</string>
 </resources>
