@@ -1,4 +1,4 @@
-package kr.hs.dgsw.jangsengpoapp;
+package kr.hs.dgsw.jangsengpoapp.RecyclerView;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
@@ -7,6 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import java.util.ArrayList;
+
+import kr.hs.dgsw.jangsengpoapp.R;
 
 public class ListAdapter extends RecyclerView.Adapter<ListItemViewHolder> {
     private ArrayList<String> listData;

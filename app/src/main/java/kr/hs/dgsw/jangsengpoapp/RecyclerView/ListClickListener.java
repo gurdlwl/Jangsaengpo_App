@@ -1,4 +1,4 @@
-package kr.hs.dgsw.jangsengpoapp;
+package kr.hs.dgsw.jangsengpoapp.RecyclerView;
 
 import android.view.View;
 

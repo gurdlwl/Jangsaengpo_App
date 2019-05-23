@@ -13,6 +13,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import kr.hs.dgsw.jangsengpoapp.RecyclerView.ListAdapter;
+import kr.hs.dgsw.jangsengpoapp.RecyclerView.ListClickListener;
+
 public class MainActivity extends AppCompatActivity implements ListClickListener {
 
     RecyclerView menuList;
