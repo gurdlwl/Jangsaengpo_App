@@ -16,23 +16,21 @@ import org.jetbrains.annotations.NotNull;
 public class VideoActivity extends AppCompatActivity {
 
     BubblePicker bubblePicker;
-    String[] titles ={
-            "test","test","test","test","test","test","test"
-    };
-    //getResources().getStringArray(R.array.titles);
-    int[] images = {
-
-    };
-    // getResources().obtainTypedArray(R.array.images);
+    String[] titles;
+    int[] images;
     int[] color = {
         R.color.colorPrimaryDark
     };
-    //getResources().obtainTypedArray(R.array.colors);
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video);
+
+        titles = getResources().getStringArray(R.array.titles);
+        // images = getResources().obtainTypedArray(R.array.images);
+        // color = getResources().obtainTypedArray(R.array.colors);
 
         bubblePicker = findViewById(R.id.picker);
         bubblePicker.setAdapter(new BubblePickerAdapter() {
@@ -54,7 +52,7 @@ public class VideoActivity extends AppCompatActivity {
             }
         });
 
-        // bubblePicker.setCenterImmediately(true);
+        bubblePicker.setCenterImmediately(true);
         bubblePicker.setBubbleSize(100);
         bubblePicker.setListener(new BubblePickerListener() {
             @Override
@@ -79,5 +77,11 @@ public class VideoActivity extends AppCompatActivity {
     protected void onPause(){
         super.onPause();
         bubblePicker.onPause();
+    }
+
+    private int randomNum(){
+        double randomVlaue = Math.random();
+        int num = (int)(randomVlaue * 100) + 50;
+        return num;
     }
 }
