@@ -1,5 +1,6 @@
 package kr.hs.dgsw.jangsengpoapp;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -21,7 +22,6 @@ public class VideoActivity extends AppCompatActivity {
     int[] color = {
         R.color.colorPrimaryDark
     };
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,7 +57,10 @@ public class VideoActivity extends AppCompatActivity {
         bubblePicker.setListener(new BubblePickerListener() {
             @Override
             public void onBubbleSelected(@NotNull PickerItem pickerItem) {
-                Toast.makeText(getApplicationContext(), "Click!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), pickerItem.getTitle() + "Click!", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(VideoActivity.this, VideoPlayActivity.class);
+                intent.putExtra("title", pickerItem.getTitle());
+                startActivity(intent);
             }
 
             @Override

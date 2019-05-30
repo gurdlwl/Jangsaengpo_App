@@ -10,12 +10,14 @@ import com.github.chrisbanes.photoview.PhotoViewAttacher;
 
 public class MapActivity extends AppCompatActivity {
 
+    PhotoView photoView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map);
 
-        PhotoView photoView = findViewById(R.id.photoView);
+        photoView = findViewById(R.id.photoView);
         photoView.setImageResource(R.drawable.munhwa_map);
 
     }

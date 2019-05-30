@@ -4,7 +4,9 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.LinearSnapHelper;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.SnapHelper;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -18,6 +20,7 @@ import kr.hs.dgsw.jangsengpoapp.RecyclerView.ListClickListener;
 
 public class MainActivity extends AppCompatActivity implements ListClickListener {
 
+    SnapHelper snapHelper;
     RecyclerView menuList;
     LinearLayoutManager layoutManager;
     ListAdapter adapter;
@@ -35,6 +38,8 @@ public class MainActivity extends AppCompatActivity implements ListClickListener
         bgImg1 = findViewById(R.id.BgColor1);
         bgImg2 = findViewById(R.id.BgColor2);
 
+        snapHelper = new LinearSnapHelper();
+
         menuList = findViewById(R.id.MenuList);
         layoutManager = new LinearLayoutManager(this);
         adapter = new ListAdapter((ArrayList<String>) data,this);
@@ -42,6 +47,8 @@ public class MainActivity extends AppCompatActivity implements ListClickListener
         layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
         menuList.setLayoutManager(layoutManager);
         menuList.setAdapter(adapter);
+
+        snapHelper.attachToRecyclerView(menuList);
     }
 
     @Override
