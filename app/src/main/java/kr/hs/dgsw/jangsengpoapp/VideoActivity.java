@@ -19,9 +19,7 @@ public class VideoActivity extends AppCompatActivity {
     BubblePicker bubblePicker;
     String[] titles;
     int[] images;
-    int[] color = {
-        R.color.colorPrimaryDark
-    };
+    int color = R.color.colorPrimaryDark;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +43,7 @@ public class VideoActivity extends AppCompatActivity {
                 PickerItem item = new PickerItem();
 
                 item.setTitle(titles[i]);
-                item.setGradient(new BubbleGradient(color[0], color[0], BubbleGradient.HORIZONTAL));
+                item.setGradient(new BubbleGradient(color, color, BubbleGradient.HORIZONTAL));
                 item.setTextColor(Color.BLACK);
 
                 return item;
@@ -57,7 +55,6 @@ public class VideoActivity extends AppCompatActivity {
         bubblePicker.setListener(new BubblePickerListener() {
             @Override
             public void onBubbleSelected(@NotNull PickerItem pickerItem) {
-                Toast.makeText(getApplicationContext(), pickerItem.getTitle() + "Click!", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(VideoActivity.this, VideoPlayActivity.class);
                 intent.putExtra("title", pickerItem.getTitle());
                 startActivity(intent);

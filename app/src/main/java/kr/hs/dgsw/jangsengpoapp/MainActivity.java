@@ -53,8 +53,6 @@ public class MainActivity extends AppCompatActivity implements ListClickListener
 
     @Override
     public void onItemClick(View v, int position){
-        Toast.makeText(this, position + ", Click!", Toast.LENGTH_LONG).show();
-
         if(position == 0){
             startActivity(new Intent(this, StorytellingActivity.class));
         } else if(position == 1){

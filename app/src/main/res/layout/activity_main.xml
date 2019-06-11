@@ -1,28 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity">
 
     <include
         android:id="@+id/include2"
-        layout="@layout/layout_basic"></include>
-
+        layout="@layout/layout_basic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></include>
 
     <TextView
         android:id="@+id/MainText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="36dp"
-        android:fontFamily="serif-monospace"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
         android:text="@string/app_name"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="32sp"
+        android:textSize="38sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -31,10 +30,9 @@
         android:id="@+id/SubText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
+        android:layout_marginStart="28dp"
         android:layout_marginTop="8dp"
-        android:fontFamily="casual"
-        android:text="@string/info"
+        android:text="@string/app_name_info"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
@@ -51,6 +49,5 @@
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/SubText" />
-
 
 </android.support.constraint.ConstraintLayout>
