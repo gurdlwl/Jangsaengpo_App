@@ -7,6 +7,12 @@
         <item>@string/map</item>
     </string-array>
 
+    <string-array name="subList">
+        <item>이용안내</item>
+        <item>공식 홈페이지</item>
+        <item>앱 정보</item>
+    </string-array>
+
     <string-array name="titles">
         <item>장생포 옛마을</item>
         <item>고래 조각공원</item>

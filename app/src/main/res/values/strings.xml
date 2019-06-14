@@ -1,12 +1,13 @@
 <resources>
     <string name="app_name">장생포</string>
     <string name="app_name_info">장생포를 더욱 더 즐겁게 관람해보세요.</string>
+    <string name="app_name_info2">장생포가 더 궁금하신가요?</string>
 
     <string name="storytelling">스토리텔링 투어</string>
-    <string name="story_info"></string>
+    <string name="story_info">재미있는 이야기와 함께 장생포를 만나보세요!</string>
 
     <string name="video">영상으로 보기</string>
-    <string name="video_info"></string>
+    <string name="video_info">영상으로 더 생생하게 장생포를 만나보세요!</string>
 
     <string name="stamp">스탬프 투어</string>
     <string name="stamp_info">아래 장소들을 찾아 스탬프를 찍으세요!</string>
