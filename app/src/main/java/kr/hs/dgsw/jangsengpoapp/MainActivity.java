@@ -92,11 +92,14 @@ public class MainActivity extends AppCompatActivity implements MainListClickList
         String url = "http://www.whalecity.kr";
 
         if(position == 0){
+            Intent intent = new Intent(getApplicationContext(), InfoActivity.class);
+            startActivity(intent);
         } else if(position == 1){
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
             startActivity(intent);
         } else if(position == 2){
-
+            Intent intent = new Intent(getApplicationContext(), InfoActivity.class);
+            startActivity(intent);
         } else if(position == 3){
 
         }

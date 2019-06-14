@@ -8,9 +8,9 @@
     </string-array>
 
     <string-array name="subList">
-        <item>이용안내</item>
-        <item>공식 홈페이지</item>
-        <item>앱 정보</item>
+        <item>@string/useInfo</item>
+        <item>@string/homepage</item>
+        <item>@string/appInfo</item>
     </string-array>
 
     <string-array name="titles">

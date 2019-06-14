@@ -14,4 +14,9 @@
 
     <string name="map">장생포 한 눈에 보기</string>
     <string name="map_info">지도를 두 손가락으로 확대, 축소하여 보세요!</string>
+
+
+    <string name="useInfo">이용안내</string>
+    <string name="homepage">공식 홈페이지</string>
+    <string name="appInfo">앱정보</string>
 </resources>
