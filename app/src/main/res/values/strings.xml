@@ -16,7 +16,7 @@
     <string name="map_info">지도를 두 손가락으로 확대, 축소하여 보세요!</string>
 
 
-    <string name="useInfo">이용안내</string>
+    <string name="use_info">이용안내</string>
     <string name="homepage">공식 홈페이지</string>
-    <string name="appInfo">앱정보</string>
+    <string name="app_down">공식 어플 다운로드</string>
 </resources>

@@ -64,14 +64,30 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/MainList" />
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/SubList"
-        android:layout_width="match_parent"
-        android:layout_height="110dp"
+    <TextView
+        android:id="@+id/HomepageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
         android:layout_marginTop="16dp"
-        android:overScrollMode="never"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:clickable="true"
+        android:onClick="onHomePageClick"
+        android:text= "@string/homepage"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/SubText2" />
+
+    <TextView
+        android:id="@+id/AppDownText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:onClick="onAppDownloadClick"
+        android:text="@string/app_down"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HomepageText" />
 
 </android.support.constraint.ConstraintLayout>

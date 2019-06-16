@@ -16,20 +16,19 @@ import java.util.List;
 
 import kr.hs.dgsw.jangsengpoapp.MainRecyclerView.MainListAdapter;
 import kr.hs.dgsw.jangsengpoapp.MainRecyclerView.MainListClickListener;
-import kr.hs.dgsw.jangsengpoapp.SubRecyclerView.SubListAdapter;
-import kr.hs.dgsw.jangsengpoapp.SubRecyclerView.SubListClickListener;
 
-public class MainActivity extends AppCompatActivity implements MainListClickListener, SubListClickListener {
+public class MainActivity extends AppCompatActivity implements MainListClickListener{
 
     SnapHelper snapHelper;
     RecyclerView mainList;
-    RecyclerView subList;
     LinearLayoutManager layoutManager;
     MainListAdapter mainListAdapter;
-    SubListAdapter subListAdapter;
 
     String[] dataRes;
     List<String> data;
+
+    String HomePageUrl ="http://www.whalecity.kr/";
+    String AppUrl = "https://play.google.com/store/apps/details?id=com.twombgame.ulsan.beacon&hl=ko";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +36,6 @@ public class MainActivity extends AppCompatActivity implements MainListClickList
         setContentView(R.layout.activity_main);
 
         createMainRecycler();
-        createSubRecycler();
     }
 
     private void createMainRecycler(){
@@ -57,23 +55,6 @@ public class MainActivity extends AppCompatActivity implements MainListClickList
         snapHelper.attachToRecyclerView(mainList);
     }
 
-    private void createSubRecycler(){
-        dataRes = getResources().getStringArray(R.array.subList);
-        data = new ArrayList<String>(Arrays.asList(dataRes));
-
-        snapHelper = new LinearSnapHelper();
-
-        subList = findViewById(R.id.SubList);
-        layoutManager = new LinearLayoutManager(this);
-        subListAdapter = new SubListAdapter((ArrayList<String>) data, this);
-
-        layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
-        subList.setLayoutManager(layoutManager);
-        subList.setAdapter(subListAdapter);
-
-        snapHelper.attachToRecyclerView(subList);
-    }
-
     @Override
     public void onItemClick(View v, int position){
         if(position == 0){
@@ -87,21 +68,13 @@ public class MainActivity extends AppCompatActivity implements MainListClickList
         }
     }
 
-    @Override
-    public void onItemClick2(View v, int position){
-        String url = "http://www.whalecity.kr";
+    public void onHomePageClick(View v){
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(HomePageUrl));
+        startActivity(intent);
+    }
 
-        if(position == 0){
-            Intent intent = new Intent(getApplicationContext(), InfoActivity.class);
-            startActivity(intent);
-        } else if(position == 1){
-            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-            startActivity(intent);
-        } else if(position == 2){
-            Intent intent = new Intent(getApplicationContext(), InfoActivity.class);
-            startActivity(intent);
-        } else if(position == 3){
-
-        }
+    public void onAppDownloadClick(View v){
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(AppUrl));
+        startActivity(intent);
     }
 }

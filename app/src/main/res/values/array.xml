@@ -8,9 +8,9 @@
     </string-array>
 
     <string-array name="subList">
-        <item>@string/useInfo</item>
+        <item>@string/use_info</item>
         <item>@string/homepage</item>
-        <item>@string/appInfo</item>
+        <item>@string/app_down</item>
     </string-array>
 
     <string-array name="titles">

@@ -29,7 +29,6 @@
         <activity
             android:name=".VideoPlayActivity"
             android:theme="@style/FullScreen" />
-        <activity android:name=".InfoActivity"></activity>
     </application>
 
 </manifest>
