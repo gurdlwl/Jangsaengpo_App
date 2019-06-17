@@ -21,7 +21,7 @@
     <string name="use_info">이용안내</string>
     <string name="operating_time">운영시간</string>
     <string name="ticketing_time">매표시간 &#160; 09:00 ~ 17:30</string>
-    <string name="preview_time">관람시간 &#160; 9:00 ~ 18:00</string>
+    <string name="preview_time">관람시간 &#160; 09:00 ~ 18:00</string>
     <string name="closed">휴관일 &#160; 매주 월요일, 설 추석 당일</string>
     <string name="fee">이용요금</string>
     <string name="fee_info">홈페이지 참조 &#160; ></string>

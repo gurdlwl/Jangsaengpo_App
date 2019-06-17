@@ -4,16 +4,11 @@ import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.Html;
-import android.text.SpannableString;
-import android.text.style.UnderlineSpan;
 import android.view.View;
-import android.widget.TextView;
 
 public class UseInfoActivity extends AppCompatActivity {
 
     final String url = "http://www.whalecity.kr/EgovPageLink.do?link=city/info/fee";
-    TextView tv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
