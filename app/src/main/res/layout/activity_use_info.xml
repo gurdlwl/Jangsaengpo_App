@@ -91,11 +91,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
         android:layout_marginTop="8dp"
-        android:text="@string/fee_info"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
         android:clickable="true"
         android:onClick="onFeeTextClick"
+        android:text="@string/fee_info"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/SubText2" />
 
