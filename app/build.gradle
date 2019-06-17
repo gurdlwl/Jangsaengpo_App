@@ -34,4 +34,5 @@ dependencies {
     implementation 'com.github.igalata:Bubble-Picker:v0.2.4'
     implementation 'com.github.chrisbanes:PhotoView:v2.0.0'
     implementation 'de.hdodenhof:circleimageview:3.0.0'
+    // implementation 'me.saket:inboxrecyclerview:1.0.0-rc1'
 }
