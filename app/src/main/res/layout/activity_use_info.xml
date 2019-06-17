@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UseInfoActivity">
+
+    <include layout="@layout/layout_basic"></include>
+
+    <TextView
+        android:id="@+id/MainText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/use_info"
+        android:textColor="#FFFFFF"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/SubText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/operating_time"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MainText" />
+
+    <TextView
+        android:id="@+id/TicketText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/ticketing_time"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SubText" />
+
+    <TextView
+        android:id="@+id/PreviewText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/preview_time"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TicketText" />
+
+    <TextView
+        android:id="@+id/ClosedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/closed"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PreviewText" />
+
+    <TextView
+        android:id="@+id/SubText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/fee"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ClosedText" />
+
+    <TextView
+        android:id="@+id/FeeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/fee_info"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:clickable="true"
+        android:onClick="onFeeTextClick"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SubText2" />
+
+
+</android.support.constraint.ConstraintLayout>
