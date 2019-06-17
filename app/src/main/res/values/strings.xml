@@ -6,17 +6,23 @@
     <string name="storytelling">스토리텔링 투어</string>
     <string name="story_info">재미있는 이야기와 함께 장생포를 만나보세요!</string>
 
-    <string name="video">영상으로 보기</string>
+    <string name="video">영상으로 보는 장생포</string>
     <string name="video_info">영상으로 더 생생하게 장생포를 만나보세요!</string>
 
     <string name="stamp">스탬프 투어</string>
     <string name="stamp_info">아래 장소들을 찾아 스탬프를 찍으세요!</string>
 
-    <string name="map">장생포 한 눈에 보기</string>
+    <string name="map">한 눈에 보는 장생포</string>
     <string name="map_info">지도를 두 손가락으로 확대, 축소하여 보세요!</string>
 
-
-    <string name="use_info">이용안내</string>
     <string name="homepage">공식 홈페이지</string>
     <string name="app_down">공식 어플 다운로드</string>
+
+    <string name="use_info">이용안내</string>
+    <string name="operating_time">운영시간</string>
+    <string name="ticketing_time">매표시간 &#160; 09:00 ~ 17:30</string>
+    <string name="preview_time">관람시간 &#160; 9:00 ~ 18:00</string>
+    <string name="closed">휴관일 &#160; 매주 월요일, 설 추석 당일</string>
+    <string name="fee">이용요금</string>
+    <string name="fee_info">홈페이지 참조</string>
 </resources>

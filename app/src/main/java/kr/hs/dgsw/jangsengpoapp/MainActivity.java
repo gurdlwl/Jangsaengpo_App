@@ -27,8 +27,8 @@ public class MainActivity extends AppCompatActivity implements MainListClickList
     String[] dataRes;
     List<String> data;
 
-    String HomePageUrl ="http://www.whalecity.kr/";
-    String AppUrl = "https://play.google.com/store/apps/details?id=com.twombgame.ulsan.beacon&hl=ko";
+    final String HomePageUrl ="http://www.whalecity.kr/";
+    final String AppUrl = "https://play.google.com/store/apps/details?id=com.twombgame.ulsan.beacon&hl=ko";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,6 +66,11 @@ public class MainActivity extends AppCompatActivity implements MainListClickList
         } else if(position == 3){
             startActivity(new Intent(this, MapActivity.class));
         }
+    }
+
+    public void onUseInfoClick(View v){
+        Intent intent = new Intent(getApplicationContext(), UseInfoActivity.class);
+        startActivity(intent);
     }
 
     public void onHomePageClick(View v){

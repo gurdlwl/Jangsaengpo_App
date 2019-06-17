@@ -6,11 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <include
-        android:id="@+id/include2"
-        layout="@layout/layout_basic"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"></include>
+    <include layout="@layout/layout_basic"></include>
 
     <TextView
         android:id="@+id/SubText"
@@ -55,7 +51,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="12dp"
         android:text="@string/app_name_info2"
         android:textAllCaps="false"
         android:textColor="@color/colorPrimaryDark"
@@ -65,17 +61,30 @@
         app:layout_constraintTop_toBottomOf="@+id/MainList" />
 
     <TextView
-        android:id="@+id/HomepageText"
+        android:id="@+id/UseInfoText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
         android:layout_marginTop="16dp"
         android:clickable="true"
+        android:onClick="onUseInfoClick"
+        android:text="@string/use_info"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SubText2" />
+
+    <TextView
+        android:id="@+id/HomepageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
         android:onClick="onHomePageClick"
         android:text= "@string/homepage"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/SubText2" />
+        app:layout_constraintTop_toBottomOf="@+id/UseInfoText" />
 
     <TextView
         android:id="@+id/AppDownText"

@@ -6,9 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".StampActivity">
 
-    <include
-        android:id="@+id/include5"
-        layout="@layout/layout_basic"></include>
+    <include layout="@layout/layout_basic"></include>
 
     <TextView
         android:id="@+id/MainText"
@@ -41,8 +39,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="@+id/include5"
-        app:layout_constraintEnd_toStartOf="@+id/include5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
         app:layout_constraintHorizontal_bias="0.111"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/MainText">

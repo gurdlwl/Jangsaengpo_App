@@ -1,9 +1,14 @@
 package kr.hs.dgsw.jangsengpoapp;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.webkit.WebChromeClient;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
 import android.widget.Toast;
 
 public class VideoPlayActivity extends AppCompatActivity {
@@ -26,7 +31,7 @@ public class VideoPlayActivity extends AppCompatActivity {
         strings = getResources().getStringArray(R.array.titles);
 
         if(title.equals(strings[0])){ // 장생포 옛마을
-            // https://youtu.be/lgqrEgJlixl
+            // https://youtu.be/lgqrEgJlixI
 
         } else if(title.equals(strings[1])){ // 고래 조각공원
             // https://youtu.be/jFrHcW8qUx0

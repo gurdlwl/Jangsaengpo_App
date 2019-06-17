@@ -6,9 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".VideoActivity">
 
-    <include
-        android:id="@+id/include"
-        layout="@layout/layout_basic"></include>
+    <include layout="@layout/layout_basic"></include>
 
     <TextView
         android:id="@+id/MainText"
@@ -42,7 +40,7 @@
         android:layout_width="match_parent"
         android:layout_height="400dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/include"
+        app:layout_constraintTop_toTopOf="parent"
         app:backgroundColor="#00000000"/>
 
 </android.support.constraint.ConstraintLayout>

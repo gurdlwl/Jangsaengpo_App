@@ -2,6 +2,7 @@ package kr.hs.dgsw.jangsengpoapp;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Toast;
@@ -55,14 +56,19 @@ public class VideoActivity extends AppCompatActivity {
         bubblePicker.setListener(new BubblePickerListener() {
             @Override
             public void onBubbleSelected(@NotNull PickerItem pickerItem) {
-                Intent intent = new Intent(VideoActivity.this, VideoPlayActivity.class);
-                intent.putExtra("title", pickerItem.getTitle());
-                startActivity(intent);
+                new Handler().postDelayed( new Runnable() {
+                    @Override
+                    public void run() {
+                        Intent intent = new Intent(VideoActivity.this, VideoPlayActivity.class);
+                        intent.putExtra("title", pickerItem.getTitle());
+                        startActivity(intent);
+                    }
+                }, 600 );
             }
 
             @Override
             public void onBubbleDeselected(@NotNull PickerItem pickerItem) {
-
+                // None
             }
         });
     }
